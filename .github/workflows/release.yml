@@ -1,4 +1,4 @@
-name: Publish Package
+name: Release
 
 on:
   push:
@@ -7,10 +7,10 @@ on:
 
 permissions:
   id-token: write  # Required for OIDC
-  contents: read
+  contents: write
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -42,4 +42,4 @@ jobs:
         run: npm install -g npm@latest
 
       - name: Publish
-        run: pnpm publish -r --no-git-checks
+        run: pnpm -r publish --access public --no-git-checks
