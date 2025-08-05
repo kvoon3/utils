@@ -6,11 +6,24 @@
   "description": "Kevin Kwong's utils",
   "author": "Kevin Kwong <kvoon@duck.com>",
   "license": "MIT",
-  "keywords": [],
+  "homepage": "https://github.com/kvoon3/utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvoon3/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kvoon3/utils/issues"
+  },
+  "keywords": [
+    "utils"
+  ],
   "exports": {
     "types": "./dist/index.d.ts",
     "import": "./dist/index.js"
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
