@@ -9,19 +9,20 @@ export function clearNull<T extends object>(obj: T): T {
   return obj as any
 }
 
-export function getDeepValue(obj: object): any {
+export function getDeepValue<TValue = any>(obj: object): TValue {
+  if (!isObject(obj))
+    return obj
+
   const get = (obj: object): any => {
     const keys = objectKeys(obj)
-    if (keys.length === 1) {
-      const value = obj[keys[0]]
-      if (isObject(value) && !Array.isArray(value))
-        return get(value)
-      else
-        return value
-    }
-    else {
+    if (keys.length !== 1)
       return obj
-    }
+
+    const value = obj[keys[0]]
+    if (isObject(value) && !Array.isArray(value))
+      return get(value)
+    else
+      return value
   }
 
   return get(obj)
