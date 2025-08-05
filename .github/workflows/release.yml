@@ -28,6 +28,8 @@ jobs:
           cache: pnpm
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Install Dependences
+        run: pnpm install --frozen-lockfile
 
       - name: Generate changelog
         run: npx changelogithub # or changelogithub@0.12 to ensure a stable result
