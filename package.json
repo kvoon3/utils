@@ -22,7 +22,7 @@
     "up": "nlx taze -I major",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
-    "release": "nlx bumpp && npm publish"
+    "release": "nlx bumpp"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.2",
