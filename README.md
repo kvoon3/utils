@@ -1,8 +1,5 @@
-# Starter TS
+# @kvoon/utils
 
-Kevin Kwong's typescript lib starter
-
-Replace:
-
-- `starter-ts`
-- `__DESCRIPTION__`
+```sh
+pnpm install -D @kvoon/utils
+```
