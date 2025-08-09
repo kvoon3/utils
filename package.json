@@ -1,7 +1,7 @@
 {
   "name": "@kvoon/utils",
   "type": "module",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "packageManager": "pnpm@10.14.0",
   "description": "Kevin Kwong's utils",
   "author": "Kevin Kwong <kvoon@duck.com>",
