@@ -18,8 +18,14 @@
     "utils"
   ],
   "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./vue": {
+      "types": "./dist/vue.d.ts",
+      "import": "./dist/vue.js"
+    }
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -48,7 +54,8 @@
     "tsdown": "^0.13.3",
     "typescript": "^5.9.2",
     "ufo": "^1.6.1",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "vue": "^3.5.18"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged"
